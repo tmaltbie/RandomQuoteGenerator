@@ -82,12 +82,33 @@ const getRandomQuote = () => {
 };
 //console.log(getRandomQuote());
 
+/**
+ * [`changeHex generates a random hex value`]
+ * 
+ * @returns {[string]} [a 7 character string that starts with # (${hex}) followed by 6 letters A-F or numbers 1-9]
+ */ 
+const changeHex = () => {
+ // selects the body tag
+ const bgColor = document.querySelector('body');
+ // an array of the 16 possible hex values
+ const hexValues = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+ let hex = '#';
+ // loop through hexValues and concatenate six random values together very similar to the `getRandomQuote` function.
+ for(let i = 0; i < 6; i++){
+  const random = Math.floor(Math.random() * hexValues.length);
+  hex += hexValues[random];
+ };
+ bgColor.style.backgroundColor = hex;
+};
+
 
 /***
  * `printQuote` function uses the getRandomQuote function to grab specific properties from random objects of the quotes array
  * and then concatenates them into the HTML to display in the DOM
+ * It also calls the changeHex() function.
 ***/
 const printQuote = () => {
+ changeHex();
  let getQuote = getRandomQuote();
  let quoteHTML = `<p class="quote"> ${getQuote.quote}</p> <p class="source"> ${getQuote.source}`;
   if (getQuote.citation) {
@@ -105,40 +126,16 @@ const printQuote = () => {
  };
 
 /**
- * [`changeHex generates a random hex value`]
+ * setInterval repeatedly calls a function
  *
- * @param this function takes no parameters.
- * @returns {[string]} [the function returns a 7 character string that starts with # followed by 6 letters A-F or numbers 1-9]
- */ 
-function changeHex () {
- // selects the body tag
- const bgColor = document.querySelector('body');
- // an array of the 16 possible hex values
- const hexValues = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
- let hex = '#';
- // loop through hexValues and concatenate six random values together very similar to the `getRandomQuote` function.
- for(let i = 0; i < 6; i++){
-  const random = Math.floor(Math.random() * hexValues.length);
-  hex += hexValues[random];
- };
- bgColor.style.backgroundColor = hex;
-};
-
-/**
- * setInterval reoeatedly calls a function and executes the 
- *
- * @param {[param type]} param1 - [parameter description]
- * @param {[param type]} param2 - [parameter description]
- * @returns {[return type]} [documents the function's return value]
+ * @returns {[function]} [calls two functions within itself every 10 seconds]
  */
-setInterval(function () {
- printQuote();
- changeHex();
-}, 10000);
+setInterval(printQuote, 10000);
+
+
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
-document.getElementById('load-quote').addEventListener("click", changeHex, false);
