@@ -68,6 +68,9 @@ const quotes = [
    source: 'Homer Simpson',
    citation: 'The Simpsons',
    tags: 'humor'
+  },{
+   quote: 'Art, freedom and creativity will change society faster than politics. What is extraordinary about contemporary art is the energy - it has our energy. New energy.',
+   source: 'Victor Pinchuk'
   }
 ];
 // console.log(quotes);
