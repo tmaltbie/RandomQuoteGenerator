@@ -16,61 +16,80 @@ const quotes = [
     quote: 'If it is not right, do not do it, if it is not true, do not say it.',
     source: 'Marcus Aurelius',
     tags: 'philosophy'
-  },{
+  },
+  {
     quote: 'As it is not one swallow or a fine day that makes a spring, so it is not one day or a short time that makes a man blessed and happy.',
     source: 'Aristotle'
-  },{
+  },
+  {
     quote: 'The simple but hard to follow rule is this: Only borrow money to buy things that go up in value.',
     source: 'Seth Godin',
     citation: 'Linchpin',
     tags: 'finance'
-  },{
+  },
+  {
     quote: 'Do not think that what is hard for you to master is humanly impossible; and if it is humanly possible, consider it to be within your reach.',
     source: 'Marcus Aurelius',
     tags: 'philosophy'
-  },{
+  },
+  {
     quote: 'When the suggestion comes to you that you cannot do any one thing, declare you can positively, persistently. ...Good, works through you.',
     source: 'Mary Baker Eddy',
     tags: 'spirituality'
-  },{
+  },
+  {
     quote: 'Knowledge is in every country the surest basis of public happiness.',
     source: 'George Washington'
-  },{
+  },
+  {
    quote: 'Learning is not attained by chance. It must be sought with ardor and attended with diligence.',
    source: 'Abigail Adams',
    year: 1780,
    tags: 'philosophy'
-  },{
+  },
+  {
    quote: 'Let everything happen to you / Beauty and terror / Just keep going / No feeling is final',
    source: 'Rainer Maria Rilke',
    tags: 'poetry'
-  },{
+  },
+  {
    quote: 'The professional arms himself with patience, not only to give the stars time to realign in his career, but to keep himself from flaming out in each individual work. He knows that any job ... takes twice as long he thinks and costs twice as much. He accepts that. He recognizes it as a reality.',
    source: 'Steven Pressfield',
    citation: 'The War of Art',
    year: 2002
-  },{
+  },
+  {
    quote: 'Perseverance and spirit have done wonders in all ages.',
    source: 'George Washington'
-  },{
+  },
+  {
    quote: 'Happiness was in the enlargement of one’s being through the life of the mind and of the spirit.',
    source: 'David McCullough',
    citation: 'The American Spirit',
    year: 2017,
    tags: 'philosophy'
-  }, {
+  },
+  {
    quote: 'I love a good nap. Sometimes it\'s the only thing getting me out of bed in the morning.',
    source: 'George Costanza',
    citation: 'Seinfeld',
    tags: 'humor'
-  }, {
+  },
+  {
    quote: 'Kids, just because I don\'t care doesn\'t mean I\'m not listening.',
    source: 'Homer Simpson',
    citation: 'The Simpsons',
    tags: 'humor'
-  },{
+  },
+  {
    quote: 'Art, freedom and creativity will change society faster than politics. What is extraordinary about contemporary art is the energy - it has our energy. New energy.',
    source: 'Victor Pinchuk'
+  },
+  {
+   quote: 'Roaaaaaaaaarrrrr!!!',
+   source: 'Tyrannosaurus Rex',
+   year: '6.8e7 years ago',
+   tags: 'palentology'
   }
 ];
 // console.log(quotes);
